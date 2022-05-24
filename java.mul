@@ -1,0 +1,9 @@
+int x = 125025994;
+int y = 100547903;
+int z = x * y;
+//let's try multiplyexact; if it fails, show a message
+try {   int newResult = Math.multiplyExact(x,y);
+  System.out.println("Fixed: " + newResult);
+} catch (ArithmeticException a) {
+  system.out.println("Overflow!');
+}
